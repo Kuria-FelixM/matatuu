@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking</title>
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://esri.github.io/calcite-bootstrap/assets/css/calcite-bootstrap-open.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/grayscale.min.css">
+
+    </head>
+    <body>
+         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+               <div class="container">
+                     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                           
+                           <li class="hidden">
+                              <a href="#page-top"></a>
+                           </li>
+                           <li>
+                              <a class="page-scroll" href="../matatu/index.html">About</a>
+                           </li>
+                           <li>
+                              <a class="page-scroll" href="./index.html">Services</a>
+                           </li>
+                           <li>
+                              <a class="page-scroll" href="#contact">Contact</a>
+                           </li>
+                           <li>
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdChA6WLSnIQNnJZsTBA9b2QXqmTmNkXCHDe6uUq8IH_OVVqw/viewform?usp=sf_link" target="_blank">Report Problem</a>
+                           </li>
+                        </ul>
+                     </div>
+               </div>
+         </nav>
+
+        <div class="container bookings">
+            <h2 class="book-title">Make Booking</h2>
+            <hr>
+
+           <div class="bookings-form">
+               <form action="orders.php" method="post">
+                  <div class="fulname">
+                     <label for="fullname">Name</label>
+                     <br>
+                     <input type="text" name="name" id="fullname" placeholder="Customer Name" required>
+                  </div>
+                  
+                  <div class="travel-date">
+                     <label for="date">Travel Date</label>
+                     <br>
+                     <input type="date" name="checkin" id="tdate" placeholder="Travel Date" required>
+                  </div>
+                  
+                  <div class="cell-no">
+                     <label for="tnum">Mobile Number</label>
+                     <br>
+                     <input type="tel" name="phone" id="mobile-no" placeholder="Enter phone number" required>
+                  </div>
+
+                  <div class="people">
+                     <label for="humans">No of People</label>
+                     <br>
+                     <input type="number" name="" id="no-people" placeholder="Passengers" required>
+                  </div>
+                  
+                  <label for="location">From:</label>
+                  <br>
+                  <select id="from-loc">
+                     <option value="none" selected disabled hidden>Select a location</option>
+                     <option value="Nairobi">Nairobi</option>
+                     <option value="Naivasha">Naivasha</option>
+                     <option value="Bondo">Bondo</option>
+                     <option value="sirare">Sirare</option>
+                     <option value="bomet">Bomet</option>
+                     <option value="diani">Diani</option>
+                     <option value="eldoret">Eldoret</option>
+                     <option value="embu">Embu</option>
+                     <option value="gilgil">Gilgil</option>
+                     <option value="homa">Homabay</option>
+                  </select>
+                  <br> <br>
+                  <label for="to-loc">To:</label>
+                  <br>
+                  <select id="to-loc">
+                     <option value="none" selected disabled hidden>Select a location</option>
+                     <option value="Nairobi">Nairobi</option>
+                     <option value="Naivasha">Naivasha</option>
+                     <option value="Bondo">Bondo</option>
+                     <option value="sirare">Sirare</option>
+                     <option value="bomet">Bomet</option>
+                     <option value="diani">Diani</option>
+                     <option value="eldoret">Eldoret</option>
+                     <option value="embu">Embu</option>
+                     <option value="gilgil">Gilgil</option>
+                     <option value="homa">Homabay</option>
+                  </select>
+                  <br> <br>
+                  <div class="submit-btn">
+                     <button type="submit">Book</button>
+                  </div>
+               </form>
+           </div>
+               
+         </div>
+      </body>
+      <script src="./js/script.js"></script>
+</html>
