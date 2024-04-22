@@ -4,7 +4,6 @@ try {
 } catch (Exception $exc) {
 	echo $exc->getTraceAsString();
 }
-
 if (isset($_POST['Name']) && isset($_POST['email']) && isset($_POST['Message'])) {
 	$name=$_POST['Name'];
 	$email=$_POST['email'];
